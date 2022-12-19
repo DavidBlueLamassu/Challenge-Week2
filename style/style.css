@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+  }
+
+/*Background colour and fonts*/
+body {
+    background-color: rgb(195, 219, 239);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Sets up Header Grid: name and navigation containers*/
+.headerGrid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "headerName nav";
+    height: 100px;
+}
+
+/*Formatting for name section of header*/
+#headerName {
+    grid-area: headerName;
+    display: flex;
+    border: solid black 1px;
+    background-color: rgb(63, 5, 139);
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/*Additional formatting for name fount, removing margin*/
+#headerName h1 {
+    margin: 0;
+}
+
+/*Formatting for navigation bar, including internal links;
+employs a flex-box to arrange links*/
+nav {
+    grid-area: nav;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid black 1px;
+}
+
+/*Formatting to provide additional space between links in navigation 
+bar*/
+.link {
+    padding: 25px;
+}
+
+/*Sets up Subheading Grid*/
+.section1 {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "photo subHeading"
+    ;
+    border: solid black 1px;
+    height: 300px;
+}
+
+/*Formatting for portrait image*/
+#photo {
+    grid-area: photo;
+    background-image: url(../images/portrait.jpg);
+    border: solid black 1px;
+    background-size: cover;
+}
+
+/*Formatting for decorative sub-heading image. Source information 
+may be found at the end of this CSS document*/
+#subHeading {
+    grid-area: subHeading;
+    background-image: url(../images/limits.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+}
+
+/*Formatting for subheading text*/
+#subHeadingText {
+    background-color:rgb(63, 5, 139);
+    height: 125px;
+    color: white;
+    justify-content: center;
+    position: relative;
+    top: 130px;
+    width: 425px;
+    display: flex;
+    align-items: center
+}
+
+/*Sets up 'About Me' grid*/
+.aboutMeGrid {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "aboutMe biog";
+    height: 200px;
+    padding-top: 20px;
+}
+
+/*Formatting for 'About Me' header*/
+#aboutMe {
+    grid-area: aboutMe;
+    font-size: 20px;
+    border-right: solid black 5px;
+    padding: 10px;
+    padding-top: 35px;
+    text-align: center;
+}
+
+/*Formatting for biographical text*/
+#biog {
+    grid-area: biog;
+    padding: 20px;
+    text-align: justify;
+}
+
+/*Sets up 'Work' grid*/
+.workGrid {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "work webpages"
+    "work webpages"
+    "work webpages"
+    ;
+    height: 1200px;
+    margin-top: 75px;
+}
+
+/*Sets up nested grid containing names and links to webpages*/
+#webpages {
+    grid-area: webpages;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "cubist cubist"
+    "architect myth"
+    "plants monster"
+    ;
+    height: 1200px;
+    padding: 30px;
+}
+
+/*Formatting for 'Work' heading*/
+#work {
+    grid-area: work;
+    border-right: solid black 5px;
+    text-align: center; 
+    padding-top: 575px;
+    font-size: 20px;
+}
+
+/*Formatting for 'The Cubist Museum' background image. All image
+sources for this section may be found at the end of the CSS code*/
+#cubist {
+    grid-area: cubist;
+    border: solid black 1px;
+    margin: 20px;
+    background-image: url(../images/jean-metzinger.jpg);
+    background-size: cover;
+    text-decoration: none;
+}
+
+/*Formatting for text within the 'Cubist Museum' link*/
+#cubist2 {
+    color: white;
+    border: solid black 1px;
+    position: relative;
+    top: 165px;
+    width: 300px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    background-color: rgb(63, 5, 139);
+    margin-left: 0;
+}
+
+/*Additional formatting for paragraph text within the 'Cubist 
+Museum' link*/
+#cubist2 p {
+    font-size: 15px;
+    padding-left: 3px;
+    margin-top: 0px;
+}
+
+/*Formatting for the 'Architecture' background image*/
+#architect {
+    grid-area: architect;
+    border: solid black 1px;
+    margin: 20px;
+    background-image: url(../images/architect.jpg);
+    background-size: cover;
+    text-decoration: none;
+}
+
+/*Formatting for the text within the 'Architecture' link*/
+#architect2 {
+    color: white;
+    border: solid black 1px;
+    position: relative;
+    top: 200px;
+    width: 275px;
+    font-size: 20px;
+    padding-left: 10px;
+    height: 100px;
+    padding-top: 5px;
+    background-color: rgb(63, 5, 139);
+}
+
+/*Formatting for the 'Mythical Beasts' background image*/
+#myth {
+    grid-area: myth;
+    border: solid black 1px;
+    margin: 20px;
+    background-image: url(../images/lamassu.jpg);
+    background-size: cover;
+    text-decoration: none;
+}
+
+/*Formatting for the text within the 'Mythical Beasts' link*/
+#myth2 {
+    color: white;
+    border: solid black 1px;
+    position: relative;
+    top: 200px;
+    width: 275px;
+    font-size: 20px;
+    padding-left: 10px;
+    height: 100px;
+    padding-top: 5px;
+    background-color: rgb(63, 5, 139);
+}
+
+/*Formatting for the 'Dangerous Plants' background image*/
+#plants {
+    grid-area: plants;
+    border: solid black 1px;
+    margin: 20px;
+    background-image: url(../images/plants.jpg);
+    background-size: cover;
+    text-decoration: none;
+}
+
+/*Formatting for the text within the 'Dangerous Plants' link*/
+#plants2 {
+    color: white;
+    border: solid black 1px;
+    position: relative;
+    top: 200px;
+    width: 275px;
+    font-size: 20px;
+    padding-left: 10px;
+    height: 100px;
+    padding-top: 5px;
+    background-color: rgb(63, 5, 139);
+}
+
+/*Formatting for the 'Sea Monsters' background image*/
+#monster {
+    grid-area: monster;
+    border: solid black 1px;
+    margin: 20px;
+    background-image: url(../images/monster.jpg);
+    background-size: cover;
+    text-decoration: none;
+}
+
+/*Formatting for the text within the 'Sea Monsters' link*/
+#monster2 {
+    color: white;
+    border: solid black 1px;
+    position: relative;
+    top: 200px;
+    width: 275px;
+    font-size: 20px;
+    padding-left: 10px;
+    height: 100px;
+    padding-top: 5px;
+    background-color: rgb(63, 5, 139);
+}
+
+/*Sets up the 'Contact Me' grid*/
+.contactMeGrid {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "contactMe contactDetails";
+    height: 200px;
+    padding-top: 20px;
+}
+
+/*Formatting for the 'Contact Me' heading*/
+#contactMe {
+    grid-area: contactMe;
+    font-size: 20px;
+    border-right: solid black 5px;
+    padding: 10px;
+    padding-top: 35px;
+    text-align: center;
+}
+
+/*Formatting for the provided contact information; 
+employs a flexbox to arrange links*/
+#contactDetails {
+    grid-area: contactDetails;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Media settings to display on a screen with a width of 1,000 
+pixels or less but greater than 600 pixels*/
+@media only screen and (max-width: 1000px) {
+  .headerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .section1 {
+    grid-template-columns: 1fr 3fr;
+  }
+  .contactMeGrid {
+    grid-template-columns: 1fr 5fr;
+  }
+  #contactMe {
+    border-right: solid rgb(195, 219, 239) 5px;
+  }
+}
+
+/*Media settings to display on a screen with a width of 600 pixels
+or less*/ 
+@media only screen and (max-width: 600px) {
+    .headerGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "headerName"
+    "nav"
+    ;
+    height: 300px;
+}
+  .section1 {
+    grid-template-columns: 40% 60%;
+    grid-template-rows: lfr;
+    width: 600px;
+}
+.aboutMeGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 75%;
+    grid-template-areas:
+    "aboutMe"
+    "biog"
+    ;
+    height: 450px;
+}
+
+#aboutMe {
+    border-right: solid rgb(195, 219, 239) 5px;
+}
+
+#subHeadingText {
+    padding-left: 10px;
+}
+  
+.workGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 95%;
+    grid-template-areas:
+    "work"
+    "webpages"
+    ;
+    height: 1200px;
+    width: 600px;
+}
+
+#work {
+    border-right: solid rgb(195, 219, 239) 5px;
+    padding-top: 20px;
+}
+
+#webpages {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "cubist"
+    "architect" 
+    "myth"
+    "plants" 
+    "monster"
+    ;
+}
+
+#cubist2 {
+    top: 50px;
+}
+
+#architect2 {
+    top: 50px;
+}
+
+#myth2 {
+    top: 50px;
+}
+
+#plants2 {
+    top: 50px;
+}
+
+#monster2 {
+    top: 50px;
+}
+
+.contactMeGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "contactMe"
+    "contactDetails"
+    ;
+}
+
+#contactMe {
+    border-right: solid rgb(195, 219, 239) 5px;
+}
+}
+
+/*Image Sources:
+#subHeading: Etienne-Louis Boullée, 'Perspective View of the 
+Interior of a Metropolitan Church' (1780-1781): 
+https://upload.wikimedia.org/wikipedia/commons/d/d4/Etienne-Louis_Boull%C3%A9e%2C_Perspective_View_of_the_Interior_of_a_Metropolitan_Church%2C_1780-1781%2C_NGA_73870.jpg
+#cubist: Jean Metzinger, 'Cubist Landscape' (1911):
+https://www.flickr.com/photos/gandalfsgallery/50095877028
+#architect: A modern building in Cleveland:
+https://www.publicdomainpictures.net/en/free-download.php?image=modern-building&id=2242
+#myth: Lamassu, excavated from Khorsabad, ancient Dur Sharrukin, 
+Iraq, Musée du Louvre (721-705 B.C.E):
+https://www.flickr.com/photos/profzucker/14602611523
+#plants: Venus Fly Trap:
+https://pxhere.com/en/photo/569399
+#monster: Edouard Riou, An ideal scene of the Lias period with 
+two sauropods in the sea:
+https://www.lookandlearn.com/history-images/YW023200V/An-ideal-scene-of-the-Lias-period-with-two-sauropods-in-the-sea
+*/
