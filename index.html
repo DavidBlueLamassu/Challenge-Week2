@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>David Adams // Web Developer</title>
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+  <header class="headerGrid"> 
+    <!--Header Grid: containing Name and navigation-->
+    <div id="headerName" class="headerGridArea">
+      <h1>David Adams</h1>
+    </div>
+    <nav id="nav" class="headerGridArea">
+      <a class="link" href="#aboutMe">About Me</a>
+      <a class="link" href="#work">Work</a>
+      <a class="link" href="#contactMe">Contact Me</a>
+      <a class="link" href="#">CV</a>
+    </nav>
+  </header>
+
+  <section class="section1">
+    <!--Subheading Grid: containing photograph a decorative image 
+    and subheading text. Source for decorative image may be found
+    at the end of the attached style.css code-->
+    <div id="photo">
+    </div>
+    <div id="subHeading">
+      <div id="subHeadingText">
+        <h2>Exploring the Limits of Web-Design</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="aboutMeGrid">
+    <!--'About Me' grid containing 'About Me' heading and 
+      biographical information-->
+    <div id="aboutMe" class="AboutMeGridArea">
+      <h1>About Me</h1>
+    </div>
+    <div id=biog class=AboutMeGridArea>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna 
+        aliqua.</p>
+    </div>
+  </section>
+
+  <section class="workGrid">
+    <!--Work grid containing 'Work' heading and a second container
+    with a nested grid. The nested grid provides names and illustrations
+    of completed work; the illustrations are clickable links. All
+    image sources are listed at the end of the linked style.css 
+    file-->
+    <div id="work" class="workGridArea">
+      <h1>Work</h1>
+    </div>
+    <!--A study of the code in 4dgaurav's reply to a query on 'stack overflow', 
+    regarding the use of background images as links, helped me to write the code 
+    in this section and the corresponding CSS. (user25976, 'HTML and CSS: using 
+    background image as a clickable link', stack overflow (21 August 2014), last 
+    viewed 19 December 2022: https://stackoverflow.com/questions/25422241/html-and-css-using-background-image-as-a-clickable-link). -->
+    <div id="webpages" class="workGridArea">
+        <!--Nested grid-->
+        <a id="cubist" href="https://en.wikipedia.org/wiki/Cubism">
+          <div id="cubist2">  
+          <h1>The Cubist Museum</h1>
+          <p>HTML/CSS</p>
+          </div>
+        </a>
+        <a id="architect" href="https://en.wikipedia.org/wiki/Architecture">
+          <div id="architect2">
+          <h1>Architecture</h1>
+          </div>
+        </a>
+        <a id="myth" href="https://en.wikipedia.org/wiki/Lamassu">
+          <div id="myth2">
+          <h1>Mythical Beasts</h1>
+          </div>
+        </a>
+        <a id="plants" href="https://en.wikipedia.org/wiki/Venus_flytrap">
+          <div id="plants2">
+            <h1>Dangerous Plants</h1>
+          </div>
+          </a>
+        <a id="monster" href="https://en.wikipedia.org/wiki/Sea_monster">
+          <div id="monster2">
+            <h1>Sea Monsters</h1>
+          </div>
+        </a>
+    </div>
+  </section>
+
+  <section class="contactMeGrid">
+    <!--Contact Me grid, containing a 'Contact Me' heading and 
+    various contact addresses-->
+    <div id="contactMe" class="contactMeGridArea">
+      <h1>Contact Me</h1>
+    </div>
+    <div id=contactDetails class=contactMeGridArea>
+      <a class="link" href="#">Phone</a>
+      <a class="link" href="#">E-mail</a>
+      <a class="link" href="#">Github</a>
+      <a class="link" href="#">Twitter</a>
+      <a class="link" href="#">LinkedIn</a>
+    </div>
+  </section>
+</body>
+
+</html>
