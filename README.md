@@ -20,7 +20,7 @@ N/A
 ## License
 N/A
 
-## https://davidbluelamassu.github.io/Challenge-Week2/
+## https://davidbluelamassu.github.io/Portfolio/
 
 ![Screenshot of Horiseon Homepage](./images/portfolio-screencapture.png)
 
